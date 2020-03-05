@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<form>
+    <input type="text">
+<!--    默认type属性为text-->
+    <br><br>
+    <input value="weichangwen">
+<!--    占位符,文本内容可删除-->
+    <br><br>
+    <input maxlength="9">
+    <!--    文本框可输入最大字符-->
+    <br><br>
+    <input size="40" maxlength="15">
+    <!--    size——文本框最大宽度-->
+    <br><br>
+    <input type="password" placeholder="密码">
+<!--    password属性-->
+<!--    placeholder不占文本框-->
+    <br><br>
+    <input value="weichangwen" readonly>
+    <!--    readonly只读-->
+    <br><br>
+    <textarea rows="5">aaawqqwaahifaisnsnaoifnasofao382959283572983758932sidfioas</textarea>
+<!--    控制textarea大小-->
+
+</form>
+<!--    form 、input 表单元素-->
+<!--    form 属性有Method Action,与PHP相关-->
+    <br><br>
+
+<form>
+    <input type="button" value="Button">
+    <br><br>
+    <button><a href="changwen1.html" >Button</a></button>
+    <br><br>
+    <input type="submit" value="submint">
+<!--    input button、button、submit的区别-->
+    <br><br>
+    <input type="range" min="-100" max="100">
+    <input type="range" min="-100" max="100" step="50">
+    <input type="range" min="-100" max="100" step="50" value="50">
+<!--    range——滑块-->
+<!--    min——滑块最小值-->
+<!--    max——滑块最大值-->
+<!--    step——滑块移动一次的值-->
+<!--    value——滑块初始值-->
+    <br><br>
+    <input type="number" min="-100" max="100">
+<!--    range——可滑动-->
+<!--    number——可以做年、月、日-->
+    <br><br>
+    <input type="checkbox">选择按钮
+    <input type="radio">选择按钮
+<!--    checkbox——选中后可以更改-->
+<!--    radio——选中后不可更改-->
+    <br><br>
+    最喜欢听的音乐？
+    <br>
+    <input type="radio" name="a" checked>平凡之路
+    <input type="radio" name="a">飞
+    <input type="radio" name="a">Hold on
+<!--    三选一的按钮制作，name属性相同实现-->
+<!--    checked确保有一个选中-->
+    <br><br>
+    最喜欢听的音乐？
+    <br>
+    <input type="checkbox" checked>平凡之路
+    <input type="checkbox">飞
+    <input type="checkbox">Hold on
+<!--    多项选择控制-->
+    <br><br>
+    最喜欢听的音乐？
+    <br>
+    <select>
+        <option>平凡之路</option>
+        <option>飞</option>
+        <option>Hold on</option>
+    </select>
+    <br><br>
+<!--    select——实现多选，无法实现不存在的选项-->
+    <input list="musci">最喜欢听的音乐
+    <datalist id="musci">
+        <option>平凡之路</option>
+        <option>飞</option>
+        <option>Hold on</option>
+    </datalist>
+<!--    input 和 datalist 配合使用，实现无选择项的多选-->
+<!--    select无法获取用户输入-->
+<!--    list、id实现"身份认证"-->
+    <input type="text" placeholder="出生年份" list="year">
+    <datalist id="year">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </datalist>
+<!--    出生年份实现-->
+</form>
+
+<form>
+    <input type="email">
+    <input type="tel">
+    <input type="url">
+    <br>
+    <input type="date">
+<!--    获取时间-->
+    <input type="color">
+<!--    获取颜色-->
+</form>
+
+<br><br>
+<form>
+    <input type="image" src="1.png" width="250px">
+<!--    插入image-->
+</form>
+<input type="image" src="1.png" width="250px">
+<form>
+    <input type="file" MULTIPLE>
+<!--    Mutiple——允许上传多个文件-->
+<!--    Required——必须上传一个文件-->
+<!--    input元素上传文件提交表单时，必须设置-->
+<!--    <form enctype="multipart/form-data"></form>-->
+</form>
+
+
+</body>
+</html>

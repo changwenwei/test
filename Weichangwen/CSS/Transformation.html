@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡</title>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background: antiquewhite;
+        }
+        p:hover{
+            /*选择鼠标指针浮动在其上的元素，并设置其样式：*/
+            width: 200px;
+            height: 200px;
+            background: blue;
+            transition-delay: 500ms;
+            /*触发时间*/
+            transition-duration: 500ms;
+            /*过渡时间、平滑过渡*/
+            transition-property: width,height;
+            /*对property内进行过渡，width、height直接呈现*/
+        }
+    </style>
+</head>
+<body>
+<p>
+
+</p>
+</body>
+</html>
